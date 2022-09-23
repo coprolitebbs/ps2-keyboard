@@ -3,3 +3,5 @@
 Собрана на Attiny2313A и сдвиговых регистрах 74HC595 и 74HC165.
 
 Прошивка Attiny базируется на библиотеке [ps2dev](https://github.com/Harvie/ps2dev)
+
+Простое описание данных для протокола [PS/2](https://marsohod.org/11-blog/57-ps2proto).
