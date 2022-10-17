@@ -3838,9 +3838,22 @@
     )
   )
 
+  (sheet (at 163.83 50.8) (size 25.4 13.97) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918)
+    (property "Sheet name" "Butts 2" (id 0) (at 163.83 50.0884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Butts 2.kicad_sch" (id 1) (at 163.83 65.3546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
     (path "/df9c001a-0cb9-48c8-a52a-324728cef838" (page "2"))
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918" (page "3"))
   )
 
   (symbol_instances
@@ -4204,56 +4217,56 @@
     (path "/df9c001a-0cb9-48c8-a52a-324728cef838/5107faad-e623-4a87-a63c-51d7184664b9"
       (reference "SW67") (unit 1) (value "Z") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/0d1ec9cf-6ab7-482c-9ee8-1e354aabac50"
-      (reference "SW68") (unit 1) (value "X") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/0b2619c2-a79b-46b3-975c-ffd26476399e"
+      (reference "SW?") (unit 1) (value "N") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/b7bf7e04-c374-4bde-ab9b-529a6566d30c"
-      (reference "SW69") (unit 1) (value "C") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/12aa0a31-6ace-4553-8fc4-f68d7eb48a50"
+      (reference "SW?") (unit 1) (value "RCTRL") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/c8249b4d-3806-4e0a-80b3-6721346dfbc0"
-      (reference "SW70") (unit 1) (value "V") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/294237af-56c1-48e1-b623-bd271b3740a4"
+      (reference "SW?") (unit 1) (value "SPACE") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/c7756430-bc4f-48b6-81aa-ee97bab31149"
-      (reference "SW71") (unit 1) (value "B") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/2fea542b-549a-42cc-9778-fc08da617dfd"
+      (reference "SW?") (unit 1) (value "LCTRL") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/1636d630-ce6d-4d9f-a200-60ef9d835225"
-      (reference "SW72") (unit 1) (value "N") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/33c089b9-c3b5-4348-ba57-765f9aeee6c7"
+      (reference "SW?") (unit 1) (value "PAUSE") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/aab0b25d-991d-47ef-9d12-1195d539b146"
-      (reference "SW73") (unit 1) (value "M") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/40b92754-f523-4501-bd84-388145894b4a"
+      (reference "SW?") (unit 1) (value "C") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/61d60f76-1adb-471f-9bbc-3e0b635cb3e4"
-      (reference "SW74") (unit 1) (value "< ,") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/6dc4c20a-f886-44fb-b952-b66c3fd303d9"
+      (reference "SW?") (unit 1) (value "/ ?") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/68676c11-1be3-45cb-a213-9576c05d0282"
-      (reference "SW75") (unit 1) (value "> .") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/76fafd92-be93-4341-a8b3-9b21595df9a2"
+      (reference "SW?") (unit 1) (value "RALT") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/02f42127-13f5-441b-b2bd-87d46a100de6"
-      (reference "SW76") (unit 1) (value "/ ?") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/901fb12c-e8a6-4cbe-83f7-14018227c97b"
+      (reference "SW?") (unit 1) (value "> .") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/c1938f6b-b9d7-46a8-8fd3-40e936d5d23c"
-      (reference "SW77") (unit 1) (value "RSHIFT") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/a1d2c864-58ac-408a-a4c1-0d30157eafb5"
+      (reference "SW?") (unit 1) (value "LALT") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/2d819c40-08b0-4c40-91ad-12c3c0d223c0"
-      (reference "SW78") (unit 1) (value "LCTRL") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/a9c00f61-0f87-4640-b364-76d9afa132fd"
+      (reference "SW?") (unit 1) (value "B") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/fd6bbfee-80bd-4116-88dc-7dc0d8e372be"
-      (reference "SW79") (unit 1) (value "LALT") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/af80a260-90f3-45f8-9880-33c008f562b5"
+      (reference "SW?") (unit 1) (value "X") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/ef02b468-3ac2-424c-832c-37cdcf2f4b9f"
-      (reference "SW80") (unit 1) (value "SPACE") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/cb9a760e-d159-4288-9bd5-473dc61242c8"
+      (reference "SW?") (unit 1) (value "M") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/36cac925-0ba1-4bef-8555-3a5d6c5c4bb8"
-      (reference "SW81") (unit 1) (value "RALT") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/cd1bd952-6c43-4d10-b479-6f55f20e3475"
+      (reference "SW?") (unit 1) (value "SPACE") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/80af7e77-bfcf-42b0-97af-90a332ea8b4a"
-      (reference "SW82") (unit 1) (value "RCTRL") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/e7709f82-24bd-4816-bf49-70fda763f14e"
+      (reference "SW?") (unit 1) (value "< ,") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/b4edaa54-ffbb-45b0-99af-559170b905c0"
-      (reference "SW83") (unit 1) (value "PAUSE") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/f781e48a-502f-40a0-a6f1-f40f5fa02b97"
+      (reference "SW?") (unit 1) (value "RSHIFT") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
-    (path "/df9c001a-0cb9-48c8-a52a-324728cef838/87db3385-ade7-4920-aea5-095e868dcc5b"
-      (reference "SW84") (unit 1) (value "SPACE") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
+    (path "/e3ba8edf-5eb0-44ec-8c43-bfe12bd0b918/ffbc3242-f6d5-4071-8e30-32a4a07b5783"
+      (reference "SW?") (unit 1) (value "V") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
     (path "/3c298d1f-fef6-4d1e-bec4-f37999a29476"
       (reference "U1") (unit 1) (value "ATtiny2313-20P") (footprint "Package_DIP:DIP-20_W7.62mm_Socket")
