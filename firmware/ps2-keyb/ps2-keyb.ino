@@ -132,7 +132,6 @@ const unsigned char extcanscodes[]/*14][EXT_K_SIZE]*/ PROGMEM = {
 
 //байт состояния светодиодов
 unsigned char leds;
-unsigned char km;
 
 //Установить вывод PS/2 CLOCK в HIGH
 static void clockHigh(void) {
@@ -164,20 +163,40 @@ static void dataLow(void) {
 #define readReg165Pin() (PINB & (1 << IDATA_PIN))
 
 //Тайминги ожидания при установке выводов PS/2
-#define CLK_FULL 40 // 40+40 us for 12.5 kHz clock
-#define CLK_HALF 20
+#define CLK_FULL 10 // 40+40 us for 12.5 kHz clock
+#define CLK_HALF 5
 //Таймаут проверки состояния пинов PS/2 при чтении
-#define TIMEOUT 30
+#define TIMEOUT 50
+
+//Ожидание в мс перед и после отправки байта в порт
+#define BYTEWAIT 500
+
 
 //Инициализация порта PS/2
 void init_ps2() {
+
+  DDRD = (1 << RDATA_PIN) | (1 << RCLOCK_PIN) | (1 << RLATCH_PIN) | (1 << LED1_PIN) | (1 << LED2_PIN);
+
+  //Установим оба диода в LOW
+  LED1_PORT &= ~(1 << LED1_PIN);
+  LED2_PORT &= ~(1 << LED2_PIN);
+
+  //установим выходы регистра 27HC165
+  DDRB |= (1 << ICLOCK_PIN) | (1 << ILATCH_PIN);
+  DDRB &= ~(1 << IDATA_PIN);
+
   //Установим выводы PS/2 CLOCK и DATA в HIGH
   clockHigh();
   dataHigh();
 
+
   //Отправим по PS/2 код 0xAA, означающий готовность клавиатуры к работе
-  keyb_write(0xAA);
+  while (keyb_write(0xAA) != 0);
+  //  keyb_write(0xAA);
   _delay_us(10);
+
+
+  //return;
 }
 
 
@@ -188,6 +207,7 @@ void do_clock_lo_hi() {
   _delay_us(CLK_FULL);
   clockHigh();
   _delay_us(CLK_HALF);
+  //return;
 }
 
 //Проверка состояния выводов PS/2 CLOCK и DATA
@@ -197,9 +217,10 @@ int keyb_check() {
 
 //Универсальный ответ клавиатуры - подтверждение об успешном приеме
 void ack() {
-  keyb_write(0xFA);
+  while (keyb_write(0xFA));
+  //keyb_write(0xFA);
   //_delay_us(CLK_HALF);
-  }
+}
 
 
 
@@ -249,6 +270,7 @@ int keyboard_read(unsigned char * value) {
     do_clock_lo_hi();
   }
 
+  // parity bit
   if (readDataPin()/*digitalRead(ps2data) == HIGH*/) {
     received_parity = 1;
   }
@@ -277,10 +299,10 @@ int keyboard_read(unsigned char * value) {
 //Запись байта в PS/2
 int keyb_write(unsigned char data)
 {
-  _delay_us(1000);
+  _delay_us(BYTEWAIT);
 
-  unsigned char i;
-  unsigned char parity = 1;
+  unsigned char val;
+  unsigned char received_parity = 1;
 
   if (/*digitalRead(ps2clock) == LOW*/ !readClockPin()) {
     return -1;
@@ -294,7 +316,7 @@ int keyb_write(unsigned char data)
 
   do_clock_lo_hi();
 
-  for (i = 0; i < 8; i++)
+  for (val = 0; val < 8; val++)
   {
     if (data & 0x01)
     {
@@ -305,11 +327,11 @@ int keyb_write(unsigned char data)
 
     do_clock_lo_hi();
 
-    parity = parity ^ (data & 0x01);
+    received_parity = (!(received_parity % 2)); //received_parity ^ (data & 0x01);
     data = data >> 1;
   }
   // parity bit
-  if (parity)
+  if (received_parity)
   {
     dataHigh();
   } else {
@@ -321,50 +343,87 @@ int keyb_write(unsigned char data)
   dataHigh();
   do_clock_lo_hi();
 
-  _delay_us(1000);
+  _delay_us(BYTEWAIT);
 
   return 0;
 }
+
+// грязный хак для выполнения ресета контроллера в функции вызова ресета клавиатуры
+void (*reset)(void) = (void*)0;
+
 
 
 
 int keyboard_reply(unsigned char cmd, unsigned char *leds) {
 
   unsigned char val;
-  //unsigned char enabled;
+
+// ряд не особо нужных кодов закомментирован и не используется
+// в следствие нехватки памяти для компилированного кода.
+// Параметры таймингов клавиатуры приходится изменять буквально
+// перекомпиляцие и перепрошивкой, увы.
 
   switch (cmd) {
     case 0xFF: //reset
       ack();
-      //the while loop lets us wait for the host to be ready
-      keyb_write(0xAA);
-      break;
+      reset();
+      break; //Не знаю, как тут изящно завершить
     case 0xFE: //resend
+    //      ack();
+    //      break;
+    //case 0xFA: //Set all keys to typematic/autorepeat
+    //      ack();
+    //      break;
+    //case 0xF9: //Set all keys to make only
+    //      ack();
+    //      break;
+    //case 0xF8:
+    //case 0xF7:
+    //case 0xF6: //set defaults
+    //      ack();
+    //      break;
+    //case 0xF5: //disable data reporting
+    //FM
+    //enabled = 0;
+    //      ack();
+    //      break;
+    //case 0xF4: //enable data reporting
+    //FM
+    //enabled = 1;
+    //ack();
+    //break;
+    case 0xF3: //set typematic rate
       ack();
-      break;
-    case 0xF6: //set defaults
-      //enter stream mode
-      ack();
-      break;
-    case 0xF5: //disable data reporting
-      //FM
-      //enabled = 0;
-      ack();
-      break;
-    case 0xF4: //enable data reporting
-      //FM
-      //enabled = 1;
-      ack();
+      /*if (!keyboard_read(&val)) {
+        ack(); //do nothing with the rate
+        } else {
+        if(bitRead(val,5)==1){
+          if(bitRead(val,6)==1){
+            waittime = 1000;
+          } else {
+            waittime = 750;
+          }
+        } else {
+          if(bitRead(val,6)==1){
+            waittime = 500;
+          } else {
+            waittime = 250;
+          }
+        }
+        val = (val << 4) >> 4;
+
+        }*/
       break;
     case 0xF2: //Сообщить device id
       ack();
       //0xAB83 - идентификатор оборудования стандартной клавиатуры ps/2
-      keyb_write(0xAB);
+      while (keyb_write(0xAB) != 0);
+
       //_delay_us(CLK_HALF);
-      keyb_write(0x83);
-      /*digitalWrite(LED1, HIGH);
-        _delay_us(80);
-        digitalWrite(LED1, LOW);*/
+      while (keyb_write(0x83) != 0);
+      //digitalWrite(LED1, HIGH);
+      //_delay_us(80);
+      //digitalWrite(LED1, LOW);
       break;
     case 0xF0: //set scan code set
       ack();
@@ -379,13 +438,20 @@ int keyboard_reply(unsigned char cmd, unsigned char *leds) {
       if (!keyboard_read(leds)) ack(); //do nothing with the rate
       return 1;
       break;
+      /* default:
+         LED2_PORT |= (1 << LED2_PIN);
+         _delay_us(100);
+         LED2_PORT &= ~(1 << LED2_PIN);*/
   }
   return 0;
 }
 
 
+
+
 int keyboard_read_check(unsigned char *leds) {
   unsigned char c;
+
   if ( keyb_check() ) {
     if (!keyboard_read(&c)) return keyboard_reply(c, leds);
   }
@@ -395,25 +461,43 @@ int keyboard_read_check(unsigned char *leds) {
 
 int main() {
   //Установим выходы регистра 27HC595 и диодов
-  DDRD = (1 << RDATA_PIN) | (1 << RCLOCK_PIN) | (1 << RLATCH_PIN) | (1 << LED1_PIN) | (1 << LED2_PIN);
+  //DDRD = (1 << RDATA_PIN) | (1 << RCLOCK_PIN) | (1 << RLATCH_PIN) | (1 << LED1_PIN) | (1 << LED2_PIN);
 
   //Установим оба диода в LOW
-  LED1_PORT &= ~(1 << LED1_PIN);
-  LED2_PORT &= ~(1 << LED2_PIN);
-
-  //Инициализируем пины PS/2
+  //LED1_PORT &= ~(1 << LED1_PIN);
+  //LED2_PORT &= ~(1 << LED2_PIN);
+  //bool mc = 1;
+  unsigned char km;
+  //_delay_us(1000);
   init_ps2();
+  //Инициализируем пины PS/2
+  
 
   //установим выходы регистра 27HC165
-  DDRB |= (1 << ICLOCK_PIN) | (1 << ILATCH_PIN);
-  DDRB &= ~(1 << IDATA_PIN);
+  //DDRB |= (1 << ICLOCK_PIN) | (1 << ILATCH_PIN);
+  //DDRB &= ~(1 << IDATA_PIN);
+
 
   //Главный бесконечный цикл
   while (1) {
+
+	//Опрос входящих данных с порта PS/2 и проверка байта состояния светодиодов
+    if (keyboard_read_check(&leds)) {
+      //Если СAPS включен, зажжем светодиод Св1
+      //digitalWrite(LED1, leds);
+      if (bitRead(leds, 2) == 1) {
+        //digitalWrite(LED1, HIGH);
+        LED1_PORT |= (1 << LED1_PIN);
+      } else {
+        //digitalWrite(LED1, LOW);
+        LED1_PORT &= ~(1 << LED1_PIN);
+      }
+    }
+
     //Цикл опроса регистра 595
     for (byte i = 0; i < 16; i++) {
       //сформируем адрес строки опроса клавиш в 16битном сдвиговом регистре
-      word ww = (word)1 << i;
+      uint16_t ww = (uint16_t)1 << i;
       //И запишем его в порт 595
       RLATCH_PORT &= ~(1 << RLATCH_PIN);  //LOW
       shiftOut(RDATA, RCLOCK, MSBFIRST, highByte(ww));
@@ -421,14 +505,14 @@ int main() {
       RLATCH_PORT |= (1 << RLATCH_PIN);  //HIGH
 
       //Считаем значение с регистра 165
-      word b = shiftIn165();
+      uint16_t b = shiftIn165();
 
       //Проверяем по строкам от 0 до 7
       for (byte j = 0; j < CHIP_J_COUNT; j++) {
         if (bitRead(b, j) == 1) {  // Проверяем на нажатие
           if (bitRead(pr[i], j) == 0) { //Если клавиша еще не нажата, то отправим ее код
             //LED1_PORT |= (1 << LED1_PIN);  //HIGH
-            km = pgm_read_byte(&keymap[j + /*KEYMAPSIZE*/16 * i]);
+            km = pgm_read_byte(&keymap[j + 16 * i]);
             //Проверим, не должна ли клавиша сообщать расширенный код
             if (km >= 0xE0) {
               //Если код из таблицы кодов >= E0, то читаем последовательность из массива
@@ -436,7 +520,7 @@ int main() {
               for (int k = 0; k < EXT_K_SIZE; k++) {
                 unsigned char ekm = pgm_read_byte(&extcodes[k + EXT_K_SIZE * (km - 0xE0)]);
                 if (ekm > 0x00) {
-                  keyb_write(ekm);                  
+                  keyb_write(ekm);
                 }
               }
             } else {
@@ -450,7 +534,7 @@ int main() {
           if (bitRead(pr[i], j) == 1) { //Если клавиша была нажата, то, отправим код отпускания
             km = pgm_read_byte(&keymap[j + 16 * i]);
             if (km >= 0xE0) { // По вышеописанному принципу - если код клавиши должен быть расширенным,
-                              //то выдаем расширенную последовательность из массива extcanscodes
+              //то выдаем расширенную последовательность из массива extcanscodes
               for (int k = 0; k < EXT_K_SIZE; k++) {
                 unsigned char ekm = pgm_read_byte(&extcanscodes[k + EXT_K_SIZE * (km - 0xE0)]);
                 if (ekm > 0x00) {
@@ -473,20 +557,8 @@ int main() {
 
     }
 
-    //Опрос входящих данных с порта PS/2 и проверка байта состояния светодиодов
-    if (keyboard_read_check(&leds)) {
-      //Если СAPS включен, зажжем светодиод Св1
-      //digitalWrite(LED1, leds);
-      if (bitRead(leds, 2) == 1) {
-        //digitalWrite(LED1, HIGH);
-        LED1_PORT |= (1 << LED1_PIN);
-      } else {
-        //digitalWrite(LED1, LOW);
-        LED1_PORT &= ~(1 << LED1_PIN);
-      }
-    }
-
-
+    
+    
   }  //конец главного цикла
 
   return 1;
