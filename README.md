@@ -18,16 +18,16 @@ Low: E2, High: DF, Ext: FF, Lock: FF
 
 **Для PC используйте значения:**
 ```
-#define BYTEWAIT 1000
-#define CLK_FULL 40 
-#define CLK_HALF 20
-#define TIMEOUT 30
+- #define BYTEWAIT 1000
+- #define CLK_FULL 40 
+- #define CLK_HALF 20
+- #define TIMEOUT 30
 ```
 
 **Для работы с esp32 и библиотекой FabGL используйте**
 ```
-#define BYTEWAIT 500
-#define CLK_FULL 10 
-#define CLK_HALF 5
-#define TIMEOUT 50
+- #define BYTEWAIT 500
+- #define CLK_FULL 10 
+- #define CLK_HALF 5
+- #define TIMEOUT 50
 ```
