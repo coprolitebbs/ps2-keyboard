@@ -163,13 +163,13 @@ static void dataLow(void) {
 #define readReg165Pin() (PINB & (1 << IDATA_PIN))
 
 //Тайминги ожидания при установке выводов PS/2
-#define CLK_FULL 10 // 40+40 us for 12.5 kHz clock
-#define CLK_HALF 5
+#define CLK_FULL 40 // 40+40 us for 12.5 kHz clock
+#define CLK_HALF 20
 //Таймаут проверки состояния пинов PS/2 при чтении
-#define TIMEOUT 50
+#define TIMEOUT 30
 
 //Ожидание в мс перед и после отправки байта в порт
-#define BYTEWAIT 500
+#define BYTEWAIT 1000
 
 
 //Инициализация порта PS/2
