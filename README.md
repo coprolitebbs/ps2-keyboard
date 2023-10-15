@@ -12,3 +12,18 @@
 
 Fuse-биты для Attiny2313A: 
 Low: E2, High: DF, Ext: FF, Lock: FF
+
+Имейте ввиду, клавиатура не настраивается под ваш PC или контроллер автоматически,
+придется играться с таймингами в исходнике.
+
+Для PC используйте значения:
+#define BYTEWAIT 1000
+#define CLK_FULL 40 
+#define CLK_HALF 20
+#define TIMEOUT 30
+
+Для работы с esp32 и библиотекой FabGL используйте 
+#define BYTEWAIT 500
+#define CLK_FULL 10 
+#define CLK_HALF 5
+#define TIMEOUT 50
