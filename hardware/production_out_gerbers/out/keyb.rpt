@@ -1,11 +1,11 @@
-## Footprint report - date Fri Sep 23 10:40:52 2022
-## Created by Pcbnew version (6.0.5)
+## Footprint report - date Wednesday, 15 November 2023, 12:48:18
+## Created by KiCad version (7.0.0-0)
 ## Unit = mm, Angle = deg.
 
 $BeginDESCRIPTION
 
 $BOARD
-upper_left_corner 36.851191 72.325000
+upper_left_corner 36.633929 72.325000
 lower_right_corner 220.050000 152.600000
 $EndBOARD
 
@@ -107,7 +107,7 @@ $EndMODULE  J1
 $MODULE J2
 footprint Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_ICSP
 attribut none
-position 81.290000 77.225000  orientation 0.00
+position 83.439000 77.343000  orientation 0.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -146,44 +146,6 @@ drill  1.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  J2
-
-$MODULE J3
-footprint Connector_PinSocket_2.54mm:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm
-attribut virtual
-position 207.450000 87.000000  orientation 0.00
-layer front
-$PAD "1"
-Shape CustomShape Layer front
-position -0.650000  0.000000  size  1.000000  0.500000  orientation 0.00
-drill  0.000000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape CustomShape Layer front
-position  0.650000  0.000000  size  1.000000  0.500000  orientation 0.00
-drill  0.000000
-shape_offset  0.000000  0.000000
-$EndPAD
-$EndMODULE  J3
-
-$MODULE J4
-footprint Connector_PinSocket_2.54mm:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm
-attribut virtual
-position 211.000000 87.000000  orientation 0.00
-layer front
-$PAD "1"
-Shape CustomShape Layer front
-position -0.650000  0.000000  size  1.000000  0.500000  orientation 0.00
-drill  0.000000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape CustomShape Layer front
-position  0.650000  0.000000  size  1.000000  0.500000  orientation 0.00
-drill  0.000000
-shape_offset  0.000000  0.000000
-$EndPAD
-$EndMODULE  J4
 
 $MODULE R1
 footprint Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
@@ -565,17 +527,10 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  R20
 
-$MODULE REF**
-footprint Symbol:USSRQ
-attribut none
-position 118.681553 142.978207  orientation 0.00
-layer front
-$EndMODULE  REF**
-
 $MODULE RN1
 footprint Resistor_THT:R_Array_SIP9
 attribut none
-position 173.650000 82.450000  orientation 0.00
+position 160.020000 81.788000  orientation 0.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -633,67 +588,6 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  RN1
 
-$MODULE RN2
-footprint Resistor_THT:R_Array_SIP9
-attribut none
-position 173.650000 77.700000  orientation 0.00
-layer front
-$PAD "1"
-Shape Rect Layer both
-position  0.000000  0.000000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Oval Layer both
-position  2.540000  0.000000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "3"
-Shape Oval Layer both
-position  5.080000  0.000000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "4"
-Shape Oval Layer both
-position  7.620000  0.000000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "5"
-Shape Oval Layer both
-position 10.160000  0.000000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "6"
-Shape Oval Layer both
-position 12.700000  0.000000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "7"
-Shape Oval Layer both
-position 15.240000  0.000000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "8"
-Shape Oval Layer both
-position 17.780000  0.000000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "9"
-Shape Oval Layer both
-position 20.320000  0.000000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$EndMODULE  RN2
-
 $MODULE SW1
 footprint Button_Switch_THT:SW_PUSH_KEYB_6mm_H4.3mm
 attribut none
@@ -701,25 +595,25 @@ position 48.511500 90.043500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -763,13 +657,13 @@ position 70.011500 90.000000  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -918,13 +812,13 @@ position 70.011500 100.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -961,13 +855,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -980,13 +874,13 @@ position 110.011500 90.000000  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1042,13 +936,13 @@ position 130.011500 90.000000  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1104,25 +998,25 @@ position 150.000000 90.000000  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1197,13 +1091,13 @@ position 80.011500 100.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1228,25 +1122,25 @@ position 90.011500 100.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1259,25 +1153,25 @@ position 100.011500 100.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1321,13 +1215,13 @@ position 120.011500 100.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1352,13 +1246,13 @@ position 130.011500 100.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1383,25 +1277,25 @@ position 140.011500 100.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1426,13 +1320,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1507,25 +1401,25 @@ position 186.011500 143.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1538,13 +1432,13 @@ position 206.011500 143.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1600,25 +1494,25 @@ position 201.011500 111.293500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1631,25 +1525,25 @@ position 211.023000 122.087000  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1662,25 +1556,25 @@ position 191.023000 122.087000  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1736,13 +1630,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1755,25 +1649,25 @@ position 180.011500 100.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1798,13 +1692,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1829,13 +1723,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1860,13 +1754,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1879,25 +1773,25 @@ position 74.261500 111.293500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -1953,13 +1847,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2003,13 +1897,13 @@ position 194.750000 90.000000  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2034,13 +1928,13 @@ position 94.261500 111.293500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2077,13 +1971,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2108,13 +2002,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2201,13 +2095,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2251,25 +2145,25 @@ position 164.261500 111.293500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2282,25 +2176,25 @@ position 174.261500 111.293500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2344,13 +2238,13 @@ position 48.500000 122.293500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2375,25 +2269,25 @@ position 60.011500 122.293500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2418,13 +2312,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2480,13 +2374,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2499,25 +2393,25 @@ position 100.011500 122.293500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2561,13 +2455,13 @@ position 120.011500 122.293500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2604,13 +2498,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2685,13 +2579,13 @@ position 160.011500 122.293500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2716,25 +2610,25 @@ position 48.500000 133.043500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2778,25 +2672,25 @@ position 74.261500 133.043500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2840,25 +2734,25 @@ position 94.261500 133.043500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2902,13 +2796,13 @@ position 114.261500 133.043500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -2945,13 +2839,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -3100,13 +2994,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -3119,13 +3013,13 @@ position 60.011500 143.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -3150,25 +3044,25 @@ position 84.261500 143.793500  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -3193,13 +3087,13 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
-position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -3243,25 +3137,25 @@ position 184.750000 90.000000  orientation 0.00
 layer front
 $PAD "1"
 Shape Circle Layer both
-position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
+position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "1"
 Shape Circle Layer both
-position  0.000000  0.000000  size  2.000000  2.000000  orientation 90.00
-drill  1.100000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Circle Layer both
-position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
+position  6.500000  0.000000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Circle Layer both
 position  0.000000  4.500000  size  2.000000  2.000000  orientation 90.00
+drill  1.100000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Circle Layer both
+position  6.500000  4.500000  size  2.000000  2.000000  orientation 90.00
 drill  1.100000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -3428,7 +3322,7 @@ $EndMODULE  U1
 $MODULE U2
 footprint Package_DIP:DIP-16_W7.62mm_Socket
 attribut none
-position 85.500000 84.000000  orientation 90.00
+position 89.887000 84.074000  orientation 90.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -3531,7 +3425,7 @@ $EndMODULE  U2
 $MODULE U3
 footprint Package_DIP:DIP-16_W7.62mm_Socket
 attribut none
-position 107.500000 84.000000  orientation 90.00
+position 111.887000 84.074000  orientation 90.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -3634,7 +3528,7 @@ $EndMODULE  U3
 $MODULE U4
 footprint Package_DIP:DIP-16_W7.62mm_Socket
 attribut none
-position 129.500000 84.000000  orientation 90.00
+position 137.150000 84.064000  orientation 90.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -3733,108 +3627,5 @@ drill  0.800000
 shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  U4
-
-$MODULE Ue1
-footprint Package_DIP:DIP-16_W7.62mm_Socket
-attribut none
-position 151.500000 84.000000  orientation 90.00
-layer front
-$PAD "1"
-Shape Rect Layer both
-position  0.000000  0.000000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Oval Layer both
-position  0.000000  2.540000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "3"
-Shape Oval Layer both
-position  0.000000  5.080000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "4"
-Shape Oval Layer both
-position  0.000000  7.620000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "5"
-Shape Oval Layer both
-position  0.000000 10.160000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "6"
-Shape Oval Layer both
-position  0.000000 12.700000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "7"
-Shape Oval Layer both
-position  0.000000 15.240000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "8"
-Shape Oval Layer both
-position  0.000000 17.780000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "9"
-Shape Oval Layer both
-position  7.620000 17.780000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "10"
-Shape Oval Layer both
-position  7.620000 15.240000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "11"
-Shape Oval Layer both
-position  7.620000 12.700000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "12"
-Shape Oval Layer both
-position  7.620000 10.160000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "13"
-Shape Oval Layer both
-position  7.620000  7.620000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "14"
-Shape Oval Layer both
-position  7.620000  5.080000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "15"
-Shape Oval Layer both
-position  7.620000  2.540000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "16"
-Shape Oval Layer both
-position  7.620000  0.000000  size  1.600000  1.600000  orientation 0.00
-drill  0.800000
-shape_offset  0.000000  0.000000
-$EndPAD
-$EndMODULE  Ue1
 
 $EndDESCRIPTION

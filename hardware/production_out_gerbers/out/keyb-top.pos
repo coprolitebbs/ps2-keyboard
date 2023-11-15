@@ -1,13 +1,13 @@
-### Module positions - created on Fri Sep 23 10:40:43 2022 ###
-### Printed by Pcbnew version (6.0.5)
+### Footprint positions - created on Wednesday, 15 November 2023, 12:48:01 ###
+### Printed by KiCad version (7.0.0-0)
 ## Unit = mm, Angle = deg.
 ## Side : top
 # Ref     Val             Package                                                PosX       PosY       Rot  Side
 C1        0.5Mф          C_Disc_D5.0mm_W2.5mm_P2.50mm                        30.8500    78.7000   90.0000  top
-D1        Св1           LED_D3.0mm                                         162.8250    69.7000    0.0000  top
-D2        Св2           LED_D3.0mm                                         168.0750    69.7000    0.0000  top
+D1        Св.1          LED_D3.0mm                                         162.8250    69.7000    0.0000  top
+D2        Св.2          LED_D3.0mm                                         168.0750    69.7000    0.0000  top
 J1        PS/2            PinSocket_1x04_P2.54mm_Vertical                    157.8000    80.2250   90.0000  top
-J2        РПрог      PinSocket_2x03_P2.54mm_Vertical_ICSP                37.1400    84.9750    0.0000  top
+J2        ICSP            PinSocket_2x03_P2.54mm_Vertical_ICSP                39.2890    84.8570    0.0000  top
 R1        10K             R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal    26.8500    13.2000   90.0000  top
 R2        1K              R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal    31.8500    13.2000   90.0000  top
 R3        1K              R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal    34.3500    13.1900   90.0000  top
@@ -28,15 +28,13 @@ R17       220             R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal    90
 R18       220             R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal   168.8500    56.4500   90.0000  top
 R19       220             R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal    98.3500    13.4500   90.0000  top
 R20       220             R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal   128.1000    13.3900   90.0000  top
-REF**     USSRQ           USSRQ                                               74.5316    19.2218    0.0000  top
-RN1       10K             R_Array_SIP9                                       129.5000    79.7500    0.0000  top
-RN2       10K             R_Array_SIP9                                       129.5000    84.5000    0.0000  top
+RN1       10K             R_Array_SIP9                                       115.8700    80.4120    0.0000  top
 SW1       ОТМ          SW_PUSH_KEYB_6mm_H4.3mm                              4.3615    72.1565    0.0000  top
 SW2       Ф1             SW_PUSH_KEYB_6mm_H4.3mm                             15.8615    72.2065    0.0000  top
 SW3       Ф2             SW_PUSH_KEYB_6mm_H4.3mm                             25.8615    72.2000    0.0000  top
 SW4       Ф3             SW_PUSH_KEYB_6mm_H4.3mm                             35.8615    72.2000    0.0000  top
 SW5       Ф4             SW_PUSH_KEYB_6mm_H4.3mm                             45.8615    72.2000    0.0000  top
-SW6       ~_`_Ё          SW_PUSH_KEYB_6mm_H4.3mm                              4.3500    61.4065    0.0000  top
+SW6       `_~_Ё          SW_PUSH_KEYB_6mm_H4.3mm                              4.3500    61.4065    0.0000  top
 SW7       1_!             SW_PUSH_KEYB_6mm_H4.3mm                             15.8615    61.4065    0.0000  top
 SW8       2_@_"           SW_PUSH_KEYB_6mm_H4.3mm                             25.8615    61.4065    0.0000  top
 SW9       Ф5             SW_PUSH_KEYB_6mm_H4.3mm                             55.8615    72.2000    0.0000  top
@@ -47,7 +45,7 @@ SW13      Ф9             SW_PUSH_KEYB_6mm_H4.3mm                             95
 SW14      Ф10            SW_PUSH_KEYB_6mm_H4.3mm                            105.8500    72.2000    0.0000  top
 SW15      Ф11            SW_PUSH_KEYB_6mm_H4.3mm                            115.8615    72.2000    0.0000  top
 SW16      Ф12            SW_PUSH_KEYB_6mm_H4.3mm                            125.8500    72.2000    0.0000  top
-SW17      3_#_Нм        SW_PUSH_KEYB_6mm_H4.3mm                             35.8615    61.4065    0.0000  top
+SW17      3_#             SW_PUSH_KEYB_6mm_H4.3mm                             35.8615    61.4065    0.0000  top
 SW18      4_$_;           SW_PUSH_KEYB_6mm_H4.3mm                             45.8615    61.4065    0.0000  top
 SW19      5_%             SW_PUSH_KEYB_6mm_H4.3mm                             55.8615    61.4065    0.0000  top
 SW20      6_^_:           SW_PUSH_KEYB_6mm_H4.3mm                             65.8615    61.4065    0.0000  top
@@ -59,10 +57,10 @@ SW25      ВВЕРХ      SW_PUSH_KEYB_6mm_H4.3mm                            151
 SW26      ВНИЗ        SW_PUSH_KEYB_6mm_H4.3mm                            151.8615    18.4065    0.0000  top
 SW27      ВЛЕВО      SW_PUSH_KEYB_6mm_H4.3mm                            141.8615    18.4065    0.0000  top
 SW28      ВПРАВО    SW_PUSH_KEYB_6mm_H4.3mm                            161.8615    18.4065    0.0000  top
-SW29      ВСТ          SW_PUSH_KEYB_6mm_H4.3mm                            146.8615    50.9065    0.0000  top
+SW29      ВСТВ        SW_PUSH_KEYB_6mm_H4.3mm                            146.8615    50.9065    0.0000  top
 SW30      НАЗАД      SW_PUSH_KEYB_6mm_H4.3mm                            156.8615    50.9065    0.0000  top
 SW31      СТР_ВНИЗ  SW_PUSH_KEYB_6mm_H4.3mm                            166.8730    40.1130    0.0000  top
-SW32      УД.ВП.      SW_PUSH_KEYB_6mm_H4.3mm                            146.8730    40.1130    0.0000  top
+SW32      УД._ВП.     SW_PUSH_KEYB_6mm_H4.3mm                            146.8730    40.1130    0.0000  top
 SW33      -__             SW_PUSH_KEYB_6mm_H4.3mm                            115.8615    61.4065    0.0000  top
 SW34      +_=             SW_PUSH_KEYB_6mm_H4.3mm                            125.8615    61.4065    0.0000  top
 SW35      \_|             SW_PUSH_KEYB_6mm_H4.3mm                            135.8615    61.4065    0.0000  top
@@ -81,10 +79,10 @@ SW47      U_Г            SW_PUSH_KEYB_6mm_H4.3mm                             80
 SW48      I_Ш            SW_PUSH_KEYB_6mm_H4.3mm                             90.1115    50.9065    0.0000  top
 SW49      O_Щ            SW_PUSH_KEYB_6mm_H4.3mm                            100.1115    50.9065    0.0000  top
 SW50      P_З            SW_PUSH_KEYB_6mm_H4.3mm                            110.1115    50.9065    0.0000  top
-SW51      [_Х            SW_PUSH_KEYB_6mm_H4.3mm                            120.1115    50.9065    0.0000  top
-SW52      ]_Ъ            SW_PUSH_KEYB_6mm_H4.3mm                            130.1115    50.9065    0.0000  top
+SW51      [__X_{          SW_PUSH_KEYB_6mm_H4.3mm                            120.1115    50.9065    0.0000  top
+SW52      ]_Ъ_}_         SW_PUSH_KEYB_6mm_H4.3mm                            130.1115    50.9065    0.0000  top
 SW53      ВВОД        SW_PUSH_KEYB_6mm_H4.3mm                            133.3615    37.1565    0.0000  top
-SW54      ВЕРХ.Рег  SW_PUSH_KEYB_6mm_H4.3mm                              4.3500    39.9065    0.0000  top
+SW54      ВЕРХРег  SW_PUSH_KEYB_6mm_H4.3mm                              4.3500    39.9065    0.0000  top
 SW55      A_Ф            SW_PUSH_KEYB_6mm_H4.3mm                             15.8615    39.9065    0.0000  top
 SW56      S_Ы            SW_PUSH_KEYB_6mm_H4.3mm                             25.8615    39.9065    0.0000  top
 SW57      D_В            SW_PUSH_KEYB_6mm_H4.3mm                             35.8615    39.9065    0.0000  top
@@ -95,8 +93,8 @@ SW61      J_О            SW_PUSH_KEYB_6mm_H4.3mm                             75
 SW62      K_Л            SW_PUSH_KEYB_6mm_H4.3mm                             85.8615    39.9065    0.0000  top
 SW63      L_Д            SW_PUSH_KEYB_6mm_H4.3mm                             95.8615    39.9065    0.0000  top
 SW64      :_;_Ж          SW_PUSH_KEYB_6mm_H4.3mm                            105.8615    39.9065    0.0000  top
-SW65      "_'_Э          SW_PUSH_KEYB_6mm_H4.3mm                            115.8615    39.9065    0.0000  top
-SW66      СДВГ        SW_PUSH_KEYB_6mm_H4.3mm                              4.3500    29.1565    0.0000  top
+SW65      '_"_Э          SW_PUSH_KEYB_6mm_H4.3mm                            115.8615    39.9065    0.0000  top
+SW66      LSHIFT          SW_PUSH_KEYB_6mm_H4.3mm                              4.3500    29.1565    0.0000  top
 SW67      Z_Я            SW_PUSH_KEYB_6mm_H4.3mm                             20.1115    29.1565    0.0000  top
 SW68      X_Ч            SW_PUSH_KEYB_6mm_H4.3mm                             30.1115    29.1565    0.0000  top
 SW69      C               SW_PUSH_KEYB_6mm_H4.3mm                             40.1115    29.1565    0.0000  top
@@ -107,7 +105,7 @@ SW73      M_Ь            SW_PUSH_KEYB_6mm_H4.3mm                             80
 SW74      <_,_Б          SW_PUSH_KEYB_6mm_H4.3mm                             90.1115    29.1565    0.0000  top
 SW75      >_._Ю          SW_PUSH_KEYB_6mm_H4.3mm                            100.1115    29.1565    0.0000  top
 SW76      /_?_.           SW_PUSH_KEYB_6mm_H4.3mm                            110.1115    29.1565    0.0000  top
-SW77      СДВГ        SW_PUSH_KEYB_6mm_H4.3mm                            120.1115    29.1565    0.0000  top
+SW77      RSHIFT          SW_PUSH_KEYB_6mm_H4.3mm                            120.1115    29.1565    0.0000  top
 SW78      КТРЛ        SW_PUSH_KEYB_6mm_H4.3mm                              4.3615    18.4065    0.0000  top
 SW79      АЛЬТ        SW_PUSH_KEYB_6mm_H4.3mm                             15.8615    18.4065    0.0000  top
 SW80      ПРОБЕЛ    SW_PUSH_KEYB_6mm_H4.3mm                             40.1115    18.4065    0.0000  top
@@ -115,9 +113,8 @@ SW81      АЛЬТ        SW_PUSH_KEYB_6mm_H4.3mm                            104
 SW82      КТРЛ        SW_PUSH_KEYB_6mm_H4.3mm                            114.8615    18.4065    0.0000  top
 SW83      ПАУЗА      SW_PUSH_KEYB_6mm_H4.3mm                            140.6000    72.2000    0.0000  top
 SW84      ПРОБЕЛ    SW_PUSH_KEYB_6mm_H4.3mm                             80.1115    18.4065    0.0000  top
-U1        ATtiny2313A     DIP-20_W7.62mm_Socket                                4.4250    78.1500   90.0000  top
-U2        КР1564ИР52-_1  DIP-16_W7.62mm_Socket                               41.3500    78.2000   90.0000  top
-U3        КР1564ИР52_-_2  DIP-16_W7.62mm_Socket                               63.3500    78.2000   90.0000  top
-U4        К555ИР9_-_1  DIP-16_W7.62mm_Socket                               85.3500    78.2000   90.0000  top
-Ue1       К555ИР9_-_2  DIP-16_W7.62mm_Socket                              107.3500    78.2000   90.0000  top
+U1        ATtiny2313-20P  DIP-20_W7.62mm_Socket                                4.4250    78.1500   90.0000  top
+U2        KP1564ИP52_-_1  DIP-16_W7.62mm_Socket                               45.7370    78.1260   90.0000  top
+U3        KP1564ИP52-_2  DIP-16_W7.62mm_Socket                               67.7370    78.1260   90.0000  top
+U4        KP1564ИP9      DIP-16_W7.62mm_Socket                               93.0000    78.1360   90.0000  top
 ## End
